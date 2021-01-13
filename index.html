@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calci.css">
+</head>
+
+<body>
+    <section class="calc">
+        <div class="calculator">
+            <div class="wrapper">
+                <div class="boxtext">
+                    <input type="text" id="result">
+                </div>
+                <div class="box1"><button data-number class="calc_btn" onclick="showValue('1')">1</button> </div>
+                <div class="box2"><button data-number class="calc_btn" onclick="showValue('2')">2</button></div>
+                <div class="box3"><button data-number class="calc_btn" onclick="showValue('3')">3</button></div>
+                <div class="boxadd"><button data-operator class="calc_btn" onclick="showValue('+')">+</button></div>
+                <div class="box4"><button data-number class="calc_btn" onclick="showValue('4')">4</button></div>
+                <div class="box5"><button data-number class="calc_btn" onclick="showValue('5')">5</button></div>
+                <div class="box6"><button data-number class="calc_btn" onclick="showValue('6')">6</button></div>
+                <div class="boxsub"><button data-operator class="calc_btn" onclick="showValue('-')">-</button></div>
+                <div class="box7"><button data-number class="calc_btn" onclick="showValue('7')">7</button></div>
+                <div class="box8"><button data-number class="calc_btn" onclick="showValue('8')">8</button></div>
+                <div class="box9"><button data-number class="calc_btn" onclick="showValue('9')">9</button></div>
+                <div class="boxmultiply"><button data-operator class="calc_btn" onclick="showValue('*')">*</button></div>
+                <div class="boxdot"><button data-operator class="calc_btn" onclick="showValue('.')">.</button></div>
+                <div class="box0"><button data-number class="calc_btn" onclick="showValue('0')">0</button></div>
+                <div class="boxdivide"><button data-operator class="calc_btn" onclick="showValue('/')">/</button></div>
+                <div class="boxequal"><button data-operator class="calc_btn" onclick="calculator()">=</button></div>
+                <div class="boxclear"><button class="eql_btn" onclick="clear_input()">CLEAR</button></div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>
